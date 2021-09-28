@@ -21,8 +21,7 @@ services:
     volumes:
     - drupal-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD_FILE:
-        - my-external-pass
+      POSTGRES_PASSWORD_FILE: /run/secrets/my-external-pass
     secrets:
       - my-external-pass
        
