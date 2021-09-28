@@ -23,6 +23,9 @@ services:
     environment:
       POSTGRES_PASSWORD_FILE:
         - my-external-pass
+    secrets:
+      - my-external-pass
+       
 
 
 secrets:
