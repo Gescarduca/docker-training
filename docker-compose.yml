@@ -20,7 +20,7 @@ services:
     image: postgres:12.1
     volumes:
     - drupal-data:/var/lib/postgresql/data
-    secrets:
+    environment:
       POSTGRES_PASSWORD_FILE:
         - my-external-pass
 
